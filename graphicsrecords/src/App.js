@@ -17,7 +17,7 @@ function App() {
         {/* <Routes> */}
           {/* <Route exact path="/" element={<Home/>}/> */}
             <Home/>
-            <SpinningRecord/>
+            {/* <SpinningRecord/> */}
           {/* <Route exact path="/record">
             <StyledRecordImg src={record}/>
           </Route> */}
