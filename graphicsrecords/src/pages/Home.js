@@ -31,9 +31,18 @@ const StyledHomePageTitle = styled.h1`
 const StyledRecordImg = styled.img`
   margin-bottom: 2rem;
   border-radius: 50%;
-  /* hover: {
-    transform: rotate(45deg);
-  } */
+  &:hover {
+    animation: rotation 2s infinite linear;
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+}
 `;
 
 export default Home;
