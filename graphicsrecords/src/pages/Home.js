@@ -17,21 +17,30 @@ const Home = () => {
             animate="show"
             exit="exit"
         >
-            <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
-            {/* <SpinningRecord/> */}
-            <StyledRecordImg src={record}/>
+            <StyledHomePageTitleAndRecord>
+                <StyledRecordImg src={record}/>
+                <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
+                {/* <SpinningRecord/> */}
+            </StyledHomePageTitleAndRecord>
         </motion.div>
     );
 }
 
+const StyledHomePageTitleAndRecord = styled.div`
+    display: flex;
+`;
+
 const StyledHomePageTitle = styled.h1`
     font-family: "Amita";
-    font-size: 12rem;
+    font-size: 2rem;
   margin: 2rem;
 `;
 
 const StyledRecordImg = styled.img`
-  margin-bottom: 2rem;
+    height: 5rem;
+    width: 5rem;
+    margin-top: 2rem;
+  margin-left: 2rem;
   border-radius: 50%;
   &:hover {
     animation: rotation 2s infinite linear;
