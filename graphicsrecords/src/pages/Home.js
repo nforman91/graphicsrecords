@@ -25,6 +25,8 @@ const Home = () => {
 }
 
 const StyledHomePageTitle = styled.h1`
+    font-family: "Cormorant Garmond";
+    font-size: 12rem;
   margin: 2rem;
 `;
 
