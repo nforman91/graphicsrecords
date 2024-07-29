@@ -6,7 +6,7 @@ const Products = () => {
     <StyledProducts>There are many products that are available for purchase at Graphics Records, including:
         <StyledUl>
             <li>Vinyl Records</li>
-            <li>CDs</li>
+            <li>Audio CDs</li>
             <li>Cassettes</li>
             <li>Merchandise</li>
         </StyledUl>

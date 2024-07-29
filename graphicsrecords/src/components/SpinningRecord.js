@@ -8,8 +8,8 @@ const SpinningRecord = () => {
 }
 
 const StyledRecordImg = styled.img`
-    height: 5rem;
-    width: 5rem;
+    height: 20rem;
+    width: 20rem;
     margin-top: 2rem;
   margin-left: 2rem;
   border-radius: 50%;
