@@ -69,6 +69,7 @@ const StyledContent = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin-left: 3rem;
+    font-family: "Amita";
 `;
 
 export default Home;
