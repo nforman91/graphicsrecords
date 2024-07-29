@@ -12,7 +12,7 @@ import {
     photoAnim,
     lineAnim
 } from '../animation';
-import { useScroll } from "framer-motion";
+// import { useScroll } from "framer-motion";
 import ScrollTop from "../components/ScrollTop";
 
 const Home = () => {
@@ -29,6 +29,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="exit"
+            // style={{ background: '#fff' }}
         >
             <StyledHomePageTitleAndRecord>
                 <SpinningRecord/>
@@ -36,13 +37,14 @@ const Home = () => {
             </StyledHomePageTitleAndRecord>
             <StyledContent>
                 <StyledLine/>
-                <History/>
+                    <History/>
                 <StyledLine/>
-                <Products/>
+                    <Products/>
                 <StyledLine/>
-                <Contact/>
+                    <Contact/>
                 <StyledLine/>
             </StyledContent>
+            {/* <ScrollTop/> */}
         </motion.div>
     );
 }
