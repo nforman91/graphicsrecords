@@ -18,7 +18,7 @@ const StyledProducts = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 50rem;
     font-size: 1.5rem;
 `;
 

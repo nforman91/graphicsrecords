@@ -47,6 +47,7 @@ const Home = () => {
 
 const StyledHomePageTitleAndRecord = styled.div`
     display: flex;
+    margin-bottom: 50rem;
 `;
 
 const StyledHomePageTitle = styled.h1`
