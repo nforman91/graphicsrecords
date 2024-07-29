@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 const History = () => {
   return (
-    <StyledHistory>Graphics Records was founded in Boulder, Colorado, USA in 1991. The exact location is a mystery, but if you can find it, please let us know! :)</StyledHistory>
+    <StyledHistory>
+        <div>Graphics Records was founded in Boulder, Colorado, USA in 1991.</div>
+        <div>The exact location is a mystery, but if you can find it, please let us know! :)</div>
+    </StyledHistory>
   )
 }
 
