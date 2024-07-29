@@ -35,9 +35,13 @@ const Home = () => {
                 <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
             </StyledHomePageTitleAndRecord>
             <StyledContent>
+                <StyledLine/>
                 <History/>
+                <StyledLine/>
                 <Products/>
+                <StyledLine/>
                 <Contact/>
+                <StyledLine/>
             </StyledContent>
         </motion.div>
     );
@@ -45,10 +49,12 @@ const Home = () => {
 
 const StyledHomePageTitleAndRecord = styled.div`
     display: flex;
-    margin-bottom: 50rem;
+    /* margin-bottom: 50rem; */
 `;
 
 const StyledHomePageTitle = styled.h1`
+    /* display: flex; */
+    justify-content: center;
     font-family: "Amita";
     font-size: 3rem;
   margin: 2rem;
@@ -61,6 +67,14 @@ const StyledContent = styled.div`
     /* justify-content: center; */
     margin-left: 3rem;
     font-family: "Amita";
+`;
+
+const StyledLine = styled.div`
+    height: 50rem;
+    width: 0.1rem;
+    background-color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 `;
 
 export default Home;
