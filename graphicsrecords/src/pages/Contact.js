@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const Contact = () => {
   return (
     <StyledContact>You can contact Graphics Records at: 
-        <div>Address: Boulder, CO, USA</div>
-        <div>Phone #: TBD</div>
-        <div>E-mail Address: TBD</div>
+        <StyledContactDetails>Address: Boulder, CO, USA</StyledContactDetails>
+        <StyledContactDetails>Phone #: TBD</StyledContactDetails>
+        <StyledContactDetails>E-mail Address: TBD</StyledContactDetails>
     </StyledContact>
   )
 }
@@ -16,6 +16,10 @@ const StyledContact = styled.div`
     flex-direction: column;
     align-items: flex-start;
     font-size: 1.5rem;
+`;
+
+const StyledContactDetails = styled.div`
+    margin-left: 2rem;
 `;
 
 export default Contact;

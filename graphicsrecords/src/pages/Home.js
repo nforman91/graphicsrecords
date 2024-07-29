@@ -51,7 +51,7 @@ const StyledHomePageTitleAndRecord = styled.div`
 
 const StyledHomePageTitle = styled.h1`
     font-family: "Amita";
-    font-size: 2rem;
+    font-size: 3rem;
   margin: 2rem;
 `;
 
