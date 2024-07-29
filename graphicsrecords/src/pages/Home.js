@@ -3,6 +3,9 @@ import React, { useEffect } from "react";
 import record from '../img/record.jpg';
 import {motion} from "framer-motion";
 import {pageAnimation} from "../animation";
+import History from "./History";
+import Products from "./Products";
+import Contact from "./Contact";
 import styled from 'styled-components';
 
 const Home = () => {
@@ -22,6 +25,11 @@ const Home = () => {
                 <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
                 {/* <SpinningRecord/> */}
             </StyledHomePageTitleAndRecord>
+            <StyledContent>
+                <History/>
+                <Products/>
+                <Contact/>
+            </StyledContent>
         </motion.div>
     );
 }
@@ -54,6 +62,13 @@ const StyledRecordImg = styled.img`
         }
     }
 }
+`;
+
+const StyledContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
 `;
 
 export default Home;
