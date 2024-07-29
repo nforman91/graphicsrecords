@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-// import SpinningRecord from "../components/SpinningRecord";
-import record from '../img/record.jpg';
+import SpinningRecord from "../components/SpinningRecord";
 import History from "./History";
 import Products from "./Products";
 import Contact from "./Contact";
@@ -32,9 +31,8 @@ const Home = () => {
             exit="exit"
         >
             <StyledHomePageTitleAndRecord>
-                <StyledRecordImg src={record}/>
+                <SpinningRecord/>
                 <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
-                {/* <SpinningRecord/> */}
             </StyledHomePageTitleAndRecord>
             <StyledContent>
                 <History/>
@@ -54,26 +52,6 @@ const StyledHomePageTitle = styled.h1`
     font-family: "Amita";
     font-size: 3rem;
   margin: 2rem;
-`;
-
-const StyledRecordImg = styled.img`
-    height: 5rem;
-    width: 5rem;
-    margin-top: 2rem;
-  margin-left: 2rem;
-  border-radius: 50%;
-  &:hover {
-    animation: rotation 2s infinite linear;
-    
-    @keyframes rotation {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(359deg);
-        }
-    }
-}
 `;
 
 const StyledContent = styled.div`
