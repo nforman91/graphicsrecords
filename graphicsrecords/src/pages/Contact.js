@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const Contact = () => {
   return (
     <StyledContact>You can contact Graphics Records at: 
-        <StyledContactDetails>Address: Boulder, CO, USA</StyledContactDetails>
-        <StyledContactDetails>Phone #: TBD</StyledContactDetails>
-        <StyledContactDetails>E-mail Address: TBD</StyledContactDetails>
+        <StyledContactDetails>Address: Somewhere, CO, USA</StyledContactDetails>
+        <StyledContactDetails>Phone #: (303) 579-4398</StyledContactDetails>
+        <StyledContactDetails>E-mail Address: nathan.forman@gmail.com</StyledContactDetails>
     </StyledContact>
   )
 }
