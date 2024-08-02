@@ -1,9 +1,14 @@
 import record from '../img/record.jpg';
 import styled from 'styled-components';
+import useSound from 'use-sound';
+import buttonHoverSound from '../sounds/record_scratch.mp3';
 
 const SpinningRecord = () => {
+  const soundUrl = buttonHoverSound;
+  const [play] = useSound(soundUrl);
+
   return (
-    <StyledRecordImg src={record}/>
+    <StyledRecordImg src={record} onMouseEnter={play}/>
   );
 }
 
