@@ -13,6 +13,7 @@ import {
     lineAnim
 } from '../animation';
 // import { useScroll } from "framer-motion";
+// import useScroll from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
 const Home = () => {
@@ -24,30 +25,40 @@ const Home = () => {
     }, []);
 
     return(
-        <motion.div
-            variants={pageAnimation}
-            initial="hidden"
-            animate="show"
-            exit="exit"
-            // style={{ background: '#fff' }}
-        >
-            <StyledHomePageTitleAndRecord>
-                <SpinningRecord/>
-                <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
-            </StyledHomePageTitleAndRecord>
-            <StyledContent>
-                <StyledLine/>
-                    <History/>
-                <StyledLine/>
-                    <Products/>
-                <StyledLine/>
-                    <Contact/>
-                <StyledLine/>
-            </StyledContent>
-            {/* <ScrollTop/> */}
-        </motion.div>
+        
+            // <StyledMovie
+            //     // ref={element}
+            //     // variants={fade}
+            //     // animate={controls}
+            //     // variants={pageAnimation}
+            //     // initial="hidden"
+            //     // animate="show"
+            //     // exit="exit"
+            //     // style={{ background: '#fff' }}
+            // >
+            <StyledPage>
+                <StyledHomePageTitleAndRecord>
+                    <SpinningRecord/>
+                    <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
+                </StyledHomePageTitleAndRecord>
+                <StyledContent>
+                    <StyledLine/>
+                        <History/>
+                    <StyledLine/>
+                        <Products/>
+                    <StyledLine/>
+                        <Contact/>
+                    <StyledLine/>
+                </StyledContent>
+                {/* <ScrollTop/> */}
+            {/* </StyledMovie> */}
+        </StyledPage>
     );
 }
+
+const StyledPage = styled.div`
+    margin: 0;
+`;
 
 const StyledHomePageTitleAndRecord = styled.div`
     display: flex;
@@ -60,6 +71,30 @@ const StyledHomePageTitle = styled.h1`
     font-family: "Amita";
     font-size: 3rem;
   margin: 2rem;
+`;
+
+const StyledMovie = styled(motion.div)`
+    padding-bottom: 10rem;
+    .line{
+        height: 0.5rem;
+        background: #23d997;
+        margin-bottom: 3rem;
+    }
+    img{
+        width: 1005;
+        height: 70vh;
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        margin-top: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
 `;
 
 const StyledContent = styled.div`
