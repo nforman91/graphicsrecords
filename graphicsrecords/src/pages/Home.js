@@ -41,6 +41,7 @@ const Home = () => {
                     <SpinningRecord/>
                     <StyledHomePageTitle>Graphics Records</StyledHomePageTitle>
                 </StyledHomePageTitleAndRecord>
+                <StyledHomePageSubtitle>Make sure your volume is turned low, then hover over the record to scratch it!</StyledHomePageSubtitle>
                 <StyledContent>
                     <StyledLine/>
                         <History/>
@@ -70,6 +71,14 @@ const StyledHomePageTitle = styled.h1`
     justify-content: center;
     font-family: "Amita";
     font-size: 3rem;
+  margin: 2rem;
+`;
+
+const StyledHomePageSubtitle = styled.h1`
+    /* display: flex; */
+    justify-content: center;
+    font-family: "Amita";
+    font-size: 2rem;
   margin: 2rem;
 `;
 

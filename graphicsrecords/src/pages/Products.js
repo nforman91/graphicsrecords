@@ -1,16 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const Products = () => {
   return (
-    <StyledProducts>There are many products that are available for purchase at Graphics Records, including:
-        <StyledUl>
-            <li>Vinyl Records</li>
-            <li>Audio CDs</li>
-            <li>Cassettes</li>
-            <li>Merchandise</li>
-        </StyledUl>
-    </StyledProducts>
+    <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{
+            amount: "all",
+          }}
+        >
+      <StyledProducts>There are many products that are available for purchase at Graphics Records, including:
+          <StyledUl>
+              <li>Vinyl Records</li>
+              <li>Audio CDs</li>
+              <li>Cassettes</li>
+              <li>Merchandise</li>
+          </StyledUl>
+      </StyledProducts>
+    </motion.div>
   )
 }
 

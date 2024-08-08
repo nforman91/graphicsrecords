@@ -1,13 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <StyledContact>You can contact Graphics Records at: 
-        <StyledContactDetails>Address: Somewhere, CO, USA</StyledContactDetails>
-        <StyledContactDetails>Phone #: (303) 579-4398</StyledContactDetails>
-        <StyledContactDetails>E-mail Address: nathan.forman@gmail.com</StyledContactDetails>
-    </StyledContact>
+    <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{
+            amount: "all",
+          }}
+        >
+      <StyledContact>You can contact Graphics Records at: 
+          <StyledContactDetails>Address: Somewhere, CO, USA</StyledContactDetails>
+          <StyledContactDetails>Phone #: (303) 579-4398</StyledContactDetails>
+          <StyledContactDetails>E-mail Address: nathan.forman@gmail.com</StyledContactDetails>
+      </StyledContact>
+    </motion.div>
   )
 }
 

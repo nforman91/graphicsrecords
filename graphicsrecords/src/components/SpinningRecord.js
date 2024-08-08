@@ -1,4 +1,4 @@
-import record from '../img/record.jpg';
+import record from '../img/record2.png';
 import styled from 'styled-components';
 import useSound from 'use-sound';
 import buttonHoverSound from '../sounds/record_scratch.mp3';
