@@ -1,14 +1,26 @@
 import record from '../img/record2.png';
 import styled from 'styled-components';
+import SoundPlayer from 'react-native-sound-player';
 import useSound from 'use-sound';
 import buttonHoverSound from '../sounds/record_scratch.mp3';
 
 const SpinningRecord = () => {
   const soundUrl = buttonHoverSound;
-  const [play] = useSound(soundUrl);
+  // const [play] = useSound(soundUrl);
 
   return (
-    <StyledRecordImg src={record} onMouseEnter={play}/>
+    <StyledRecordImg 
+      src={record} 
+      // onMouseEnter={play}
+      onMouseEnter={
+        SoundPlayer.playAsset(require(soundUrl))
+      }
+      // try {
+      //   SoundPlayer.playAsset(require(soundUrl))
+      // } catch {
+      //   console.log('cannot play audio file')
+      // }
+    />
   );
 }
 
