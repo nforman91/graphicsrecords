@@ -31,12 +31,10 @@ const StyledProducts = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* margin-bottom: 50rem; */
     font-size: 1.5rem;
 `;
 
 const StyledUl = styled.ul`
-    /* margin-right: 30rem; */
     padding-left: 30rem;
 `;
 

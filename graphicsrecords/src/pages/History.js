@@ -25,7 +25,6 @@ const History = () => {
 
 const StyledHistory = styled.div`
     font-size: 1.5rem;
-    /* margin-bottom: 50rem; */
 `;
 
 export default History;
