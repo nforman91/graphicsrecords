@@ -38,7 +38,7 @@ const StyledHomePageTitleAndRecord = styled.div`
 const StyledHomePageTitle = styled.h1`
     justify-content: center;
     font-family: "Amita";
-    font-size: 3rem;
+    font-size: 10rem;
   margin: 2rem;
 `;
 
